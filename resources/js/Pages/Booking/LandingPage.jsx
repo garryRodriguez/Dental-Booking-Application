@@ -49,7 +49,7 @@ export default function LandingPage() {
                     )}
 
                     <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg w-full">
-                        <h2 className="text-2xl font-bold mb-6 text-center">Dental Booking</h2>
+                        <h2 className="text-2xl font-bold mb-6 text-center">BrightSmile Dental Care</h2>
 
                         <label className="block mb-2 font-semibold">Full Name</label>
                         <input
@@ -123,11 +123,26 @@ export default function LandingPage() {
 
             {/* RIGHT — Welcome */}
             <div className="flex flex-col items-center justify-center bg-blue-600 text-white p-10">
-                <h1 className="text-4xl font-bold mb-4 text-center">Welcome to Our Dental Clinic</h1>
-                <p className="text-lg opacity-90 text-center max-w-md">
+                <h1 className="text-4xl font-bold mb-4 text-center">BrightSmile Dental Care</h1>
+
+                <p className="text-lg opacity-90 text-center max-w-md mb-6">
                     Book your dental appointment easily. You will receive an instant confirmation email.
                 </p>
+
+                {/* QR Code Display */}
+                <div className="bg-white p-4 rounded-xl shadow-lg">
+                    <img
+                        src="/qr-booking"
+                        alt="Scan to book"
+                        className="w-48 h-48"
+                    />
+                </div>
+
+                <p className="text-md opacity-90 text-center mt-4">
+                    <strong>Scan to Book</strong>
+                </p>
             </div>
+
         </div>
     );
 }

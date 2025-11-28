@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\QRCodeController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -17,6 +18,9 @@ Route::get('/', function () {
 
 Route::get('/', [BookingController::class, 'index']);
 Route::post('/bookings', [BookingController::class, 'store']);
+
+# QRCODE route
+Route::get('/qr-booking', [QRCodeController::class, 'bookingFormQr']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
