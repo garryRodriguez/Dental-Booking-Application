@@ -1,3 +1,12 @@
+**************************************************
+Project Name: Online Dental Booking App
+Author: Garry Rodriguez
+Website: https://quesoftwaregrp.com/
+Email1: rodz@quesoftwaregrp.com
+Email2: rodztechitsolutions@gmail.com
+**************************************************
+
+
 BrightSmile Dental Care – README
 
 A simple Dental Booking Web Application built with Laravel 12, React (no TypeScript), Inertia.js, and TailwindCSS.
